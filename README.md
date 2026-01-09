@@ -1,8 +1,8 @@
-## Electron App Template
+## Electron App Template 
 
-A **Electron app starter template** — build on this template to make your first desktop application.
+A simple ElectronJS starter template for building desktop applications using HTML, CSS, and JavaScript.
 
-This is a starter electron template so you can focus on building an Electron app with web technologies (HTML,CSS,Javascript) instead of dealing with heavy configuration.
+This repo is part of my YouTube tutorial on setting up your very first Electron desktop app. It’s designed to be simple, beginner-friendly, and easy to customize for any project.
 
 ---
 
@@ -14,48 +14,96 @@ This repo is only for the basic Electron template that you can clone to build wh
 
 ---
 
-## Overview
+## What this template is for 
 
-This repository provides a starting point for building desktop apps with **Electron**, using plain **HTML, CSS, and JavaScript**.
+This template is great if you are:
 
-This is good for:
-- Beginners learning Electron
-- Designers or frontend devs new to desktop apps
-- Quick prototypes or side projects
+- New to ElectronJS
+- A designer or frontend developer exploring desktop apps
+- Building quick prototypes or side projects
+- Looking for a clean starting point without extra complexity
+
+If you’re looking for a guided beginner project after setting up this template, check out this calendar demo repo: https://github.com/nasha-wanich/little-calendar
 
 ---
 
-## What’s Included
+## Project Structure
 
-- Basic Electron setup
-- Single window configuration
-- Simple HTML/CSS/JS frontend
-- Minimal file structure
+```
+electron-app-template
+├── node_modules
+├── main.js
+├──index.html
+├── styles.css
+├── script.js
+├── package.json
+└── package-lock.json
+```
 
-Core files:
-- `main.js` — electron main process
-- `index.html` — app layouts
-- `script.js` — front end logic script
-- `styles.css` — ui styling
-- `package.json` — app config and scripts
+### Core Files Explained
+
+- **`main.js`**
+    
+    Electron’s main process. Creates the app window and loads the HTML file.
+    
+- **`index.html`**
+    
+    The main UI layout of your desktop app.
+    
+- **`styles.css`**
+    
+    Styles for your app UI, including draggable window behavior.
+    
+- **`script.js`**
+    
+    Frontend JavaScript logic for interactivity.
+    
+- **`package.json`**
+    
+    App configuration, dependencies, and run scripts.
+
 
 ---
 
 ## Prerequisites
 
-Before using this template, make sure you have the following installed:
+Before using this template, make sure you have:
 
 - **Node.js**
-- Homebrew
-- A code editor (like VSCode)
+- **Homebrew** (macOS)
+- A code editor (VS Code recommended)
 
-Here's a short instruction on how to set up each 
+---
 
-### #1 Install Homebrew 
-Follow their instructions here: https://brew.sh
+## Step by step set up
 
-### #2 Set Up Node.js
+### Install Package Managers (if you don’t have one on your computer)
 
-There are multiple ways to install Node.js. In my tutorial video, I covered how to do it using terminal command lines.
+MacOS: Homebrew ([https://brew.sh](https://brew.sh/))
 
-Alternatively, you can download Node.js directly from https://nodejs.org and follow their installer instructions.
+Window: Chocolatey (https://chocolatey.org/install)
+
+### 2. Install Node.js
+
+You can install Node.js in two ways:
+
+### Option A: Use a package manager (mine is Homebrew which I used in the tutorial)
+
+```bash
+brew install node
+```
+
+Verify installation:
+
+```bash
+node -v
+npm -v
+```
+
+If both commands return version numbers, you’re good to go 
+
+### Option B: Download Installer
+
+Download Node.js directly from: https://nodejs.org
+
+and follow their installation instructions.
