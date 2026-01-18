@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Electron App Template 
 
 **IMPORTANT:** Click & open README.md for full instruction. The preview gets cut off. 
@@ -158,3 +159,6 @@ This will launch a simple Electron desktop window.
 ## Want a Beginner Walkthrough Project?
 
 If you want a step-by-step desktop app beginner tutorial, check out this repo where we build a calendar widget together: https://github.com/nasha-wanich/little-calendar
+=======
+# desktop-calendar-app
+>>>>>>> 21d704afb002dfde49dc2fba291f8d3983681d6c
