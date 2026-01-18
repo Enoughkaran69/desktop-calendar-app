@@ -2,25 +2,83 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
-  width: 100vw;
+ 
   height: 100vh;
-
-  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
   user-select: none;
+  
   -webkit-app-region: drag;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.app {
-  padding: 16px;
+.calendar-card {
+  width: 290px;
+  height: 290px;
+  background: white;
+  border-radius: 20px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 24px 20px;
+  backdrop-filter: blur(10px);
 }
 
-button,
-input,
-textarea,
-select {
+.header-pill {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   -webkit-app-region: no-drag;
-  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.date-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.day {
+  font-size: 88px;
+  font-weight: 700;
+  color: #333;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.month-year {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.month {
+  font-size: 18px;
+  color: #667eea;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.year {
+  font-size: 14px;
+  color: #999;
+  font-weight: 500;
+}
+
+.weekday {
+  font-size: 14px;
+  color: #888;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
